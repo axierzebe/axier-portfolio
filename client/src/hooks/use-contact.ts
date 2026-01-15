@@ -1,35 +1,36 @@
 import { useMutation } from "@tanstack/react-query";
-import { api, type InsertContactMessage } from "@shared/routes";
-import { useToast } from "@/hooks/use-toast";
+import type { InsertContactMessage } from "@shared/schema";
 
 export function useSubmitContact() {
-  const { toast } = useToast();
-
   return useMutation({
     mutationFn: async (data: InsertContactMessage) => {
-      const validated = api.contact.submit.input.parse(data);
-      const res = await fetch(api.contact.submit.path, {
-        method: api.contact.submit.method,
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(validated),
+      // Enviar a Formspree (email)
+      const res = await fetch("https://formspree.io/f/meeeovve", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        }),
       });
 
+      // Formspree devuelve 200/2xx si ok
       if (!res.ok) {
-        if (res.status === 400) {
-          const error = api.contact.submit.responses[400].parse(await res.json());
-          throw new Error(error.message);
+        let details = "";
+        try {
+          const json = await res.json();
+          details = json?.error || json?.message || JSON.stringify(json);
+        } catch {
+          // ignore
         }
-        throw new Error('Failed to submit message');
+        throw new Error(details || "Failed to send message");
       }
-      return api.contact.submit.responses[200].parse(await res.json());
+
+      return true;
     },
-    onError: (error) => {
-      console.error(error);
-      toast({
-        title: "Error",
-        description: error.message,
-        variant: "destructive",
-      });
-    }
   });
 }
