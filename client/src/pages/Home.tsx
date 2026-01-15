@@ -309,39 +309,73 @@ export default function Home() {
         </Section>
 
         {/* Education Section */}
-        <Section id="education" className="bg-muted/30 rounded-3xl py-16">
-          <SectionHeader title={t("edu.title")} />
-          <div className="grid gap-6 max-w-4xl mx-auto">
-             <Card className="border-l-4 border-l-primary hover:shadow-md transition-shadow">
-               <CardHeader>
-                 <div className="flex justify-between items-start flex-col md:flex-row gap-4">
-                   <div>
-                     <CardTitle className="text-xl">{t("edu.1.school")}</CardTitle>
-                     <p className="text-primary font-medium mt-1">{t("edu.1.degree")}</p>
-                   </div>
-                   <Badge variant="outline" className="font-mono">{t("edu.1.date")}</Badge>
-                 </div>
-               </CardHeader>
-               <CardContent>
-                 <p className="text-sm text-muted-foreground italic border-l-2 pl-4 border-border">
-                   {t("edu.1.note")}
-                 </p>
-               </CardContent>
-             </Card>
+<Section id="education" className="bg-muted/30 rounded-3xl py-16">
+  <SectionHeader title={t("edu.title")} />
 
-             <Card className="border-l-4 border-l-secondary hover:shadow-md transition-shadow">
-               <CardHeader>
-                 <div className="flex justify-between items-start flex-col md:flex-row gap-4">
-                   <div>
-                     <CardTitle className="text-xl">{t("edu.2.school")}</CardTitle>
-                     <p className="text-secondary font-medium mt-1">{t("edu.2.degree")}</p>
-                   </div>
-                   <Badge variant="outline" className="font-mono">{t("edu.2.date")}</Badge>
-                 </div>
-               </CardHeader>
-             </Card>
+  <div className="grid gap-6 max-w-4xl mx-auto">
+
+    {/* MASTER – Sacred Heart University */}
+    <a
+      href="https://www.sacredheart.edu/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block group"
+    >
+      <Card className="border-l-4 border-l-primary hover:shadow-md transition-shadow cursor-pointer">
+        <CardHeader>
+          <div className="flex justify-between items-start flex-col md:flex-row gap-4">
+            <div>
+              <CardTitle className="text-xl flex items-center gap-2">
+                {t("edu.1.school")}
+                <span className="text-muted-foreground text-sm">↗</span>
+              </CardTitle>
+              <p className="text-primary font-medium mt-1">
+                {t("edu.1.degree")}
+              </p>
+            </div>
+            <Badge variant="outline" className="font-mono">
+              {t("edu.1.date")}
+            </Badge>
           </div>
-        </Section>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground italic border-l-2 pl-4 border-border">
+            {t("edu.1.note")}
+          </p>
+        </CardContent>
+      </Card>
+    </a>
+
+    {/* GRADO – Mondragon Unibertsitatea */}
+    <a
+      href="https://www.mondragon.edu/es/inicio"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block group"
+    >
+      <Card className="border-l-4 border-l-secondary hover:shadow-md transition-shadow cursor-pointer">
+        <CardHeader>
+          <div className="flex justify-between items-start flex-col md:flex-row gap-4">
+            <div>
+              <CardTitle className="text-xl flex items-center gap-2">
+                {t("edu.2.school")}
+                <span className="text-muted-foreground text-sm">↗</span>
+              </CardTitle>
+              <p className="text-secondary font-medium mt-1">
+                {t("edu.2.degree")}
+              </p>
+            </div>
+            <Badge variant="outline" className="font-mono">
+              {t("edu.2.date")}
+            </Badge>
+          </div>
+        </CardHeader>
+      </Card>
+    </a>
+
+  </div>
+</Section>
+
 
         {/* Contact Section */}
         <Section id="contact" className="mb-12 py-16">
