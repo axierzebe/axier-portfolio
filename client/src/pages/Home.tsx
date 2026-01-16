@@ -224,30 +224,35 @@ export default function Home() {
 
       <Card className="border-border/50 hover:border-primary/50 transition-colors duration-300">
         <CardHeader className="relative">
-          <a
-            href="/tfg.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
-          >
-            PDF-ES
-          </a>
+  {/* Fecha (primero) */}
+  <Badge
+    variant="secondary"
+    className="absolute top-4 right-20 w-fit font-mono"
+  >
+    {t("exp.date1")}
+  </Badge>
 
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
-            <div>
-              <CardTitle className="text-xl font-bold text-primary">
-                {t("exp.role1")}
-              </CardTitle>
-              <CardDescription className="text-lg font-medium text-foreground mt-1">
-                {t("exp.company1")}
-              </CardDescription>
-            </div>
+  {/* Botón PDF (después) */}
+  <a
+    href="/tfg.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
+  >
+    PDF-ES
+  </a>
 
-            <Badge variant="secondary" className="w-fit font-mono">
-              {t("exp.date1")}
-            </Badge>
-          </div>
-        </CardHeader>
+  <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mt-6">
+    <div>
+      <CardTitle className="text-xl font-bold text-primary">
+        {t("exp.role1")}
+      </CardTitle>
+      <CardDescription className="text-lg font-medium text-foreground mt-1">
+        {t("exp.company1")}
+      </CardDescription>
+    </div>
+  </div>
+</CardHeader>
 
         <CardContent>
           <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
