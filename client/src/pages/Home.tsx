@@ -143,7 +143,6 @@ export default function Home() {
        {/* About Section */}
 <Section id="about" className="bg-muted/30 rounded-3xl my-12 py-16">
   <SectionHeader title={t("about.title")} />
-
   <div className="grid md:grid-cols-3 gap-12 items-start">
     <div className="md:col-span-2 text-lg leading-relaxed text-muted-foreground">
       <p>{t("about.bio")}</p>
@@ -197,19 +196,21 @@ export default function Home() {
           </div>
         </div>
 
-   {/* VIEW CV */}
-<div className="pt-4">
-  <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
-    <Button
-      className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20"
-      variant="outline"
-    >
-      <Eye className="mr-2 h-4 w-4" /> {t("hero.cta.cv")}
-    </Button>
-  </a>
-</div>
-
-
+        {/* VIEW CV */}
+        <div className="pt-4">
+          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+            <Button
+              className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20"
+              variant="outline"
+            >
+              <Eye className="mr-2 h-4 w-4" /> {t("hero.cta.cv")}
+            </Button>
+          </a>
+        </div>
+      </CardContent>
+    </Card>
+  </div>
+</Section>
       
 
 
