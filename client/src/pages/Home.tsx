@@ -214,7 +214,7 @@ export default function Home() {
       
 
 
-      {/* Experience Section */}
+     {/* Experience Section */}
 <Section id="experience" className="py-16">
   <SectionHeader title={t("exp.title")} subtitle="Professional Journey" />
 
@@ -254,7 +254,6 @@ export default function Home() {
         </CardHeader>
 
         <CardContent>
-          {/* 👇 AQUÍ SÍ FUNCIONA EL \n */}
           <p className="text-muted-foreground leading-relaxed whitespace-pre-line mb-6">
             {t("exp.desc1")}
           </p>
@@ -280,16 +279,6 @@ export default function Home() {
               </Badge>
             ))}
           </div>
-        </CardContent>
-      </Card>
-    </div>
-  </div>
-</Section>
-          
-          {/* 👇 AQUÍ SÍ FUNCIONA EL \n */}
-          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-            {t("exp.desc1")}
-          </p>
         </CardContent>
       </Card>
     </div>
