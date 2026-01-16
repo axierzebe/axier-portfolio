@@ -407,7 +407,7 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* Education Section */}
+       {/* Education Section */}
 <Section id="education" className="bg-muted/30 rounded-3xl py-16">
   <SectionHeader title={t("edu.title")} />
 
@@ -418,27 +418,43 @@ export default function Home() {
       href="https://www.sacredheart.edu/"
       target="_blank"
       rel="noopener noreferrer"
-      className="block group"
+      className="group block"
     >
-      <Card className="border-l-4 border-l-primary hover:shadow-md transition-shadow cursor-pointer">
+      <Card
+        className="
+          bg-background/60 backdrop-blur-sm
+          border border-border/60 border-l-4 border-l-primary
+          transition-all duration-300 ease-out
+          hover:-translate-y-1 hover:shadow-xl
+          hover:border-primary/60
+          cursor-pointer
+        "
+      >
         <CardHeader>
           <div className="flex justify-between items-start flex-col md:flex-row gap-4">
             <div>
               <CardTitle className="text-xl flex items-center gap-2">
                 {t("edu.1.school")}
-                <span className="text-muted-foreground text-sm">↗</span>
+                <span className="text-muted-foreground text-sm transition-transform duration-300 group-hover:translate-x-1">
+                  ↗
+                </span>
               </CardTitle>
               <p className="text-primary font-medium mt-1">
                 {t("edu.1.degree")}
               </p>
             </div>
-            <Badge variant="outline" className="font-mono">
+
+            <Badge
+              variant="outline"
+              className="font-mono group-hover:border-primary/40 transition-colors"
+            >
               {t("edu.1.date")}
             </Badge>
           </div>
         </CardHeader>
+
         <CardContent>
-          <p className="text-sm text-muted-foreground italic border-l-2 pl-4 border-border">
+          <p className="text-sm text-muted-foreground italic border-l-2 pl-4 border-border group-hover:border-primary/40 transition-colors">
             {t("edu.1.note")}
           </p>
         </CardContent>
@@ -450,21 +466,36 @@ export default function Home() {
       href="https://www.mondragon.edu/es/inicio"
       target="_blank"
       rel="noopener noreferrer"
-      className="block group"
+      className="group block"
     >
-      <Card className="border-l-4 border-l-secondary hover:shadow-md transition-shadow cursor-pointer">
+      <Card
+        className="
+          bg-background/60 backdrop-blur-sm
+          border border-border/60 border-l-4 border-l-secondary
+          transition-all duration-300 ease-out
+          hover:-translate-y-1 hover:shadow-xl
+          hover:border-secondary/60
+          cursor-pointer
+        "
+      >
         <CardHeader>
           <div className="flex justify-between items-start flex-col md:flex-row gap-4">
             <div>
               <CardTitle className="text-xl flex items-center gap-2">
                 {t("edu.2.school")}
-                <span className="text-muted-foreground text-sm">↗</span>
+                <span className="text-muted-foreground text-sm transition-transform duration-300 group-hover:translate-x-1">
+                  ↗
+                </span>
               </CardTitle>
               <p className="text-secondary font-medium mt-1">
                 {t("edu.2.degree")}
               </p>
             </div>
-            <Badge variant="outline" className="font-mono">
+
+            <Badge
+              variant="outline"
+              className="font-mono group-hover:border-secondary/40 transition-colors"
+            >
               {t("edu.2.date")}
             </Badge>
           </div>
@@ -474,6 +505,7 @@ export default function Home() {
 
   </div>
 </Section>
+
 
 
         {/* Contact Section */}
