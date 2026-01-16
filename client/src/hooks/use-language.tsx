@@ -33,7 +33,7 @@ const translations: Record<string, Record<Language, string>> = {
   // About
   "about.title": { EN: "About Me", ES: "Sobre Mí" },
   "about.edu": { EN: "Education", ES: "Formación Académica" },
-  "about.edu.desc": { EN: "Master’s in Business Analytics (Applied AI) | BSc in Energy Engineering", ES: "Máster en Business Analytics (IA Aplicada) | Grado en Ingeniería de la Energía" },
+  "about.edu.desc": { EN: "Master’s in Business Analytics (Applied AI) & BSc in Energy Engineering", ES: "Máster en Business Analytics (IA Aplicada) y Grado en Ingeniería de la Energía" },
   "about.exp": { EN: "Experience", ES: "Experiencia Profesional" },
   "about.exp.desc": { EN: "Electrical Distribution & Project Management", ES: "Distribución Eléctrica y Gestión de Proyectos" },
   "about.bio": { 
