@@ -196,21 +196,22 @@ export default function Home() {
           </div>
         </div>
 
-        {/* VIEW CV */}
-        <div className="pt-4">
-          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
-            <Button
-              className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20"
-              variant="outline"
-            >
-              <Eye className="mr-2 h-4 w-4" /> {t("about.cv.view")}
-            </Button>
-          </a>
-        </div>
-      </CardContent>
-    </Card>
-  </div>
-</Section>
+        import { useLocale } from "next-intl"
+
+const locale = useLocale()
+
+{/* VIEW CV */}
+<div className="pt-4">
+  <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+    <Button
+      className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20"
+      variant="outline"
+    >
+      <Eye className="mr-2 h-4 w-4" />
+      {locale === "es" ? "Ver CV" : "View CV"}
+    </Button>
+  </a>
+</div>
 
       
 
