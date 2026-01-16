@@ -1,3 +1,4 @@
+"use client";
 import { Navigation } from "@/components/Navigation";
 import { Section, SectionHeader } from "@/components/Section";
 import { useLanguage } from "@/hooks/use-language";
