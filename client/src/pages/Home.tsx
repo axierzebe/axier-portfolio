@@ -214,7 +214,7 @@ export default function Home() {
       
 
 
-       {/* Experience Section */}
+      {/* Experience Section */}
 <Section id="experience" className="py-16">
   <SectionHeader title={t("exp.title")} subtitle="Professional Journey" />
 
@@ -225,7 +225,6 @@ export default function Home() {
 
       <Card className="border-border/50 hover:border-primary/50 transition-colors duration-300">
         <CardHeader className="relative">
-          
           {/* Fecha + PDF (columna, arriba a la derecha) */}
           <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
             <Badge variant="secondary" className="w-fit font-mono">
@@ -254,34 +253,38 @@ export default function Home() {
           </div>
         </CardHeader>
 
-       <CardContent className="flex-1 flex flex-col">
-  {/* Descripción */}
-  <p className="text-muted-foreground leading-relaxed whitespace-pre-line mb-6">
-    {t("exp.desc1")}
-  </p>
+        <CardContent>
+          {/* 👇 AQUÍ SÍ FUNCIONA EL \n */}
+          <p className="text-muted-foreground leading-relaxed whitespace-pre-line mb-6">
+            {t("exp.desc1")}
+          </p>
 
-  {/* Skills (igual que Projects) */}
-  <div className="flex flex-wrap gap-2 mt-auto">
-    {[
-      t("exp.skill.1"),
-      t("exp.skill.2"),
-      t("exp.skill.3"),
-      t("exp.skill.4"),
-      t("exp.skill.5"),
-      t("exp.skill.6"),
-      t("exp.skill.7"),
-      t("exp.skill.8")
-    ].map(skill => (
-      <Badge
-        key={skill}
-        variant="secondary"
-        className="bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-default py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm"
-      >
-        {skill}
-      </Badge>
-    ))}
+          {/* ✅ Experience Skills (MISMO FORMATO QUE PROJECTS) */}
+          <div className="flex flex-wrap gap-2">
+            {[
+              t("exp.skill.1"),
+              t("exp.skill.2"),
+              t("exp.skill.3"),
+              t("exp.skill.4"),
+              t("exp.skill.5"),
+              t("exp.skill.6"),
+              t("exp.skill.7"),
+              t("exp.skill.8"),
+            ].map((skill) => (
+              <Badge
+                key={skill}
+                variant="secondary"
+                className="bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-default py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm"
+              >
+                {skill}
+              </Badge>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </div>
   </div>
-</CardContent>
+</Section>
           
           {/* 👇 AQUÍ SÍ FUNCIONA EL \n */}
           <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
