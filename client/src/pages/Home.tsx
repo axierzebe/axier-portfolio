@@ -138,62 +138,54 @@ export default function Home() {
           </div>
         </section>
 
-       {/* About Section */}
-<Section id="about" className="bg-muted/30 rounded-3xl my-12 py-16">
-  <SectionHeader title={t("about.title")} />
-
-  <div className="grid md:grid-cols-3 gap-12 items-start">
-    <div className="md:col-span-2 text-lg leading-relaxed text-muted-foreground">
-      <p>{t("about.bio")}</p>
-
-      <div className="grid grid-cols-2 gap-6 mt-8">
-        <div className="flex flex-col gap-2 p-4 bg-background rounded-xl border border-border/50 shadow-sm">
-          <GraduationCap className="text-primary h-8 w-8 mb-2" />
-          <span className="font-bold text-foreground">{t("about.edu")}</span>
-          <span className="text-sm">{t("about.edu.desc")}</span>
-        </div>
-
-        <div className="flex flex-col gap-2 p-4 bg-background rounded-xl border border-border/50 shadow-sm">
-          <Briefcase className="text-secondary h-8 w-8 mb-2" />
-          <span className="font-bold text-foreground">{t("about.exp")}</span>
-          <span className="text-sm">{t("about.exp.desc")}</span>
-        </div>
-      </div>
-    </div>
-
-    <Card className="bg-background/50 backdrop-blur-sm border-primary/10 shadow-lg">
-      <CardContent className="pt-6 space-y-4">
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-full bg-primary/10 text-primary">
-            <Mail size={18} />
+        {/* About Section */}
+        <Section id="about" className="bg-muted/30 rounded-3xl my-12 py-16">
+          <SectionHeader title={t("about.title")} />
+          <div className="grid md:grid-cols-3 gap-12 items-start">
+            <div className="md:col-span-2 text-lg leading-relaxed text-muted-foreground">
+              <p>{t("about.bio")}</p>
+              
+              <div className="grid grid-cols-2 gap-6 mt-8">
+                <div className="flex flex-col gap-2 p-4 bg-background rounded-xl border border-border/50 shadow-sm">
+                  <GraduationCap className="text-primary h-8 w-8 mb-2" />
+                  <span className="font-bold text-foreground">{t("about.edu")}</span>
+                  <span className="text-sm">{t("about.edu.desc")}</span>
+                </div>
+                <div className="flex flex-col gap-2 p-4 bg-background rounded-xl border border-border/50 shadow-sm">
+                  <Briefcase className="text-secondary h-8 w-8 mb-2" />
+                  <span className="font-bold text-foreground">{t("about.exp")}</span>
+                  <span className="text-sm">{t("about.exp.desc")}</span>
+                </div>
+              </div>
+            </div>
+            
+            <Card className="bg-background/50 backdrop-blur-sm border-primary/10 shadow-lg">
+              <CardContent className="pt-6 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-full bg-primary/10 text-primary"><Mail size={18} /></div>
+                  <div className="flex flex-col">
+                    <span className="text-xs font-semibold text-muted-foreground">EMAIL</span>
+                    <a href="mailto:axierzebe@gmail.com" className="text-sm hover:text-primary transition-colors">axierzebe@gmail.com</a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-full bg-primary/10 text-primary"><Linkedin size={18} /></div>
+                  <div className="flex flex-col">
+                    <span className="text-xs font-semibold text-muted-foreground">LINKEDIN</span>
+                    <a href="https://www.linkedin.com/in/axier-zeberio-017b6a340" target="_blank" className="text-sm hover:text-primary transition-colors">axier-zeberio</a>
+                  </div>
+                </div>
+                <div className="pt-4">
+                  <a href="/cv.pdf" download="CV_Axier_Ceberio.pdf">
+                    <Button className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20" variant="outline">
+                      <FileDown className="mr-2 h-4 w-4" /> {t("hero.cta.cv")}
+                    </Button>
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
           </div>
-          <div className="flex flex-col">
-            <span className="text-xs font-semibold text-muted-foreground">EMAIL</span>
-            <a
-              href="mailto:axierzebe@gmail.com"
-              className="text-sm hover:text-primary transition-colors"
-            >
-              axierzebe@gmail.com
-            </a>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-full bg-primary/10 text-primary">
-            <Linkedin size={18} />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-xs font-semibold text-muted-foreground">LINKEDIN</span>
-            <a
-              href="https://www.linkedin.com/in/axier-zeberio-017b6a340"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm hover:text-primary transition-colors"
-            >
-              axier-zeberio
-            </a>
-          </div>
-        </div>
+        </Section>
 
       
 
