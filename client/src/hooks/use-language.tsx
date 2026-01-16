@@ -46,10 +46,18 @@ const translations: Record<string, Record<Language, string>> = {
   "exp.role1": { EN: "Final Degree Project – Elecnor", ES: "Trabajo Fin de Grado – Elecnor" },
   "exp.company1": { EN: "Resource Management in Electrical Distribution", ES: "Gestión de Recursos en la Distribución Eléctrica" },
   "exp.date1": { EN: "Sep 2024 – Jul 2025", ES: "Sep 2024 – Jul 2025" },
-  "exp.desc1": { 
-    EN: "Professional training in electrical distribution, contributing to the operational management of work centers, personnel, and projects. Involvement in fault management and new electrical supply projects. Development of a custom LabVIEW application to optimize operational management and resource allocation.<em>Final Degree Project report available in Spanish.</em>", 
-    ES: "Formación profesional en distribución eléctrica, participando en la gestión operativa de centros de trabajo, personal y proyectos. Colaboración en la resolución de averías y en proyectos de nuevos suministros eléctricos. Desarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa y la asignación de recursos.<em>Memoria del TFG disponible en Español.</em>." 
-  },
+  "exp.desc1": {
+  EN: "Professional training in electrical distribution, contributing to the operational management of work centers, personnel, and projects. Involvement in fault management and new electrical supply projects. Development of a custom LabVIEW application to optimize operational management and resource allocation.\n\nFinal Degree Project report available in Spanish.",
+  ES: "Formación profesional en distribución eléctrica, participando en la gestión operativa de centros de trabajo, personal y proyectos. Colaboración en la resolución de averías y en proyectos de nuevos suministros eléctricos. Desarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa y la asignación de recursos.\n\nMemoria del TFG disponible en español."
+}
+<p className="whitespace-pre-line">
+  {text.split("\n\n")[0]}
+  {"\n\n"}
+  <span className="italic">
+    {text.split("\n\n")[1]}
+  </span>
+</p>
+
 
   // Projects
   "proj.title": { EN: "Projects", ES: "Proyectos" },
