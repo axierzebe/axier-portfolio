@@ -197,11 +197,7 @@ export default function Home() {
           </div>
         </div>
 
-        import { useLocale } from "next-intl"
-
-const locale = useLocale()
-
-{/* VIEW CV */}
+    {/* VIEW CV */}
 <div className="pt-4">
   <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
     <Button
@@ -213,6 +209,8 @@ const locale = useLocale()
     </Button>
   </a>
 </div>
+
+
 
       
 
