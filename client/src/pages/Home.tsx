@@ -432,31 +432,43 @@ export default function Home() {
   );
 }
 
-function ProjectCard({
-  icon,
-  title,
-  description,
-  tags,
-  pdfHref
-}: {
-  icon: React.ReactNode
-  title: string
-  description: string
-  tags: string[]
-  pdfHref?: string
-}) {
-  return (
-    <Card className="group hover:-translate-y-1 transition-all duration-300 hover:shadow-lg border-border/60 overflow-hidden h-full flex flex-col">
-      <CardHeader className="relative">
-        {pdfHref && (
-          <a
-  href={pdfHref}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
->
-  PDF
-</a>
+<ProjectCard
+  icon={<Wind className="h-8 w-8 text-blue-500" />}
+  title={t("proj.1.title")}
+  description={t("proj.1.desc")}
+  tags={[/* tus tags */]}
+  pdfs={[
+    { label: "PDF-EU", href: "/wind-generator.pdf" }
+  ]}
+/>
+<ProjectCard
+  icon={<Battery className="h-8 w-8 text-green-500" />}
+  title={t("proj.2.title")}
+  description={t("proj.2.desc")}
+  tags={[/* tus tags */]}
+  pdfs={[
+    { label: "PDF-EN", href: "/electric-scooter.pdf" }
+  ]}
+/>
+<ProjectCard
+  icon={<Droplets className="h-8 w-8 text-cyan-500" />}
+  title={t("proj.4.title")}
+  description={t("proj.4.desc")}
+  tags={[/* tus tags */]}
+  pdfs={[
+    { label: "PDF-ES", href: "/storage-system.pdf" }
+  ]}
+/>
+<ProjectCard
+  icon={<Sun className="h-8 w-8 text-yellow-500" />}
+  title={t("proj.3.title")}
+  description={t("proj.3.desc")}
+  tags={[/* tus tags */]}
+  pdfs={[
+    { label: "PDF-EU", href: "/solar-thermal.pdf" } // usa aquí el nombre real
+  ]}
+/>
+
 
 
 
