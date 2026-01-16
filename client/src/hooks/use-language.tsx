@@ -43,12 +43,12 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Experience
   "exp.title": { EN: "Experience", ES: "Experiencia" },
-  "exp.role1": { EN: "Energy Engineer", ES: "Ingeniero de la Energía" },
-  "exp.company1": { EN: "Elecnor Servicios y Proyectos, S.A.U.", ES: "Elecnor Servicios y Proyectos, S.A.U." },
+  "exp.role1": { EN: "Final Degree Project – Elecnor", ES: "Trabajo Fin de Grado – Elecnor" },
+  "exp.company1": { EN: "Resource Management in Electrical Distribution", ES: "Gestión de Recursos en la Distribución Eléctrica" },
   "exp.date1": { EN: "Sep 2024 – Jul 2025", ES: "Sep 2024 – Jul 2025" },
   "exp.desc1": { 
-    EN: "Professional training in electrical distribution; managing worksites, personnel, and projects. Participated in fault management and new supply projects. Developed a custom LabVIEW application to improve operational management.", 
-    ES: "Formación profesional en distribución eléctrica; gestión de centros de trabajo, personal y proyectos. Participación en la gestión de averías y proyectos de nuevos suministros. Desarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa." 
+    EN: "Professional training in electrical distribution, contributing to the operational management of work centers, personnel, and projects. Involvement in fault management and new electrical supply projects. Development of a custom LabVIEW application to optimize operational management and resource allocation.<em>Final Degree Project report available in Spanish.</em>", 
+    ES: "Formación profesional en distribución eléctrica, participando en la gestión operativa de centros de trabajo, personal y proyectos. Colaboración en la resolución de averías y en proyectos de nuevos suministros eléctricos. Desarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa y la asignación de recursos.<em>Memoria del TFG disponible en Español.</em>." 
   },
 
   // Projects
