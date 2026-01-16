@@ -195,7 +195,25 @@ export default function Home() {
           </div>
         </div>
 
-        
+        {/* VIEW CV BUTTON */}
+        <div className="pt-4">
+          <a
+            href="/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+  className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20"
+  variant="outline"
+>
+  <Eye className="mr-2 h-4 w-4" /> View CV
+</Button>
+          </a>
+        </div>
+      </CardContent>
+    </Card>
+  </div>
+</Section>
 
 
         {/* Experience Section */}
