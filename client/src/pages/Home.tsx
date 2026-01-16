@@ -214,68 +214,58 @@ export default function Home() {
       
 
 
-        {/* Experience Section */}
+       {/* Experience Section */}
 <Section id="experience" className="py-16">
   <SectionHeader title={t("exp.title")} subtitle="Professional Journey" />
 
   <div className="relative border-l-2 border-primary/20 ml-4 md:ml-0 md:pl-8 space-y-12">
     <div className="relative">
+      {/* Timeline dot */}
       <span className="absolute -left-[3.25rem] md:-left-[2.65rem] top-2 h-5 w-5 rounded-full border-4 border-background bg-primary" />
 
       <Card className="border-border/50 hover:border-primary/50 transition-colors duration-300">
         <CardHeader className="relative">
-  {/* Fecha + PDF en columna */}
-  <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
-    <Badge
-      variant="secondary"
-      className="w-fit font-mono"
-    >
-      {t("exp.date1")}
-    </Badge>
+          
+          {/* Fecha + PDF (columna, arriba a la derecha) */}
+          <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
+            <Badge variant="secondary" className="w-fit font-mono">
+              {t("exp.date1")}
+            </Badge>
 
-    <a
-      href="/tfg.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
-    >
-      PDF-ES
-    </a>
-  </div>
+            <a
+              href="/tfg.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
+            >
+              PDF-ES
+            </a>
+          </div>
 
-  <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mt-6">
-    <div>
-      <CardTitle className="text-xl font-bold text-primary">
-        {t("exp.role1")}
-      </CardTitle>
-      <CardDescription className="text-lg font-medium text-foreground mt-1">
-        {t("exp.company1")}
-      </CardDescription>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mt-6">
+            <div>
+              <CardTitle className="text-xl font-bold text-primary">
+                {t("exp.role1")}
+              </CardTitle>
+              <CardDescription className="text-lg font-medium text-foreground mt-1">
+                {t("exp.company1")}
+              </CardDescription>
+            </div>
+          </div>
+        </CardHeader>
+
+        <CardContent>
+          {/* 👇 AQUÍ SÍ FUNCIONA EL \n */}
+          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+            {t("exp.desc1")}
+          </p>
+        </CardContent>
+      </Card>
     </div>
   </div>
-</CardHeader>
+</Section>
 
-        <CardContent className="flex-1 flex flex-col">
-        {/* 👇 AQUÍ FUNCIONA EL \n */}
-        <p className="text-muted-foreground mb-6 whitespace-pre-line">
-          {description}
-        </p>
-
-        <div className="flex flex-wrap gap-2 mt-auto">
-          {tags.map(tag => (
-            <Badge
-              key={tag}
-              variant="secondary"
-              className="bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-default py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm"
-            >
-              {tag}
-            </Badge>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
-  )
-}
+       
       {/* Projects Section */}
 <Section id="projects" className="bg-slate-50 dark:bg-slate-900/20 rounded-3xl py-16">
   <SectionHeader title={t("proj.title")} subtitle="Engineering & Innovation" />
