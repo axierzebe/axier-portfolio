@@ -214,7 +214,7 @@ export default function Home() {
       
 
 
-     {/* Experience Section */}
+    {/* Experience Section */}
 <Section id="experience" className="py-16">
   <SectionHeader title={t("exp.title")} subtitle="Professional Journey" />
 
@@ -225,8 +225,8 @@ export default function Home() {
 
       <Card className="border-border/50 hover:border-primary/50 transition-colors duration-300">
         <CardHeader className="relative">
-          {/* Fecha + PDF (columna, arriba a la derecha) */}
-          <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
+          {/* ✅ DESKTOP: Fecha + PDF (arriba a la derecha) */}
+          <div className="hidden md:flex absolute top-4 right-4 flex-col items-end gap-2">
             <Badge variant="secondary" className="w-fit font-mono">
               {t("exp.date1")}
             </Badge>
@@ -241,14 +241,30 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mt-6">
-            <div>
-              <CardTitle className="text-xl font-bold text-primary">
-                {t("exp.role1")}
-              </CardTitle>
-              <CardDescription className="text-lg font-medium text-foreground mt-1">
-                {t("exp.company1")}
-              </CardDescription>
+          {/* Título + Empresa */}
+          <div className="flex flex-col gap-2 mt-6">
+            <CardTitle className="text-xl font-bold text-primary">
+              {t("exp.role1")}
+            </CardTitle>
+
+            <CardDescription className="text-lg font-medium text-foreground">
+              {t("exp.company1")}
+            </CardDescription>
+
+            {/* ✅ MOBILE: Fecha debajo del título (y PDF debajo de la fecha) */}
+            <div className="flex flex-col items-start gap-2 md:hidden mt-2">
+              <Badge variant="secondary" className="w-fit font-mono">
+                {t("exp.date1")}
+              </Badge>
+
+              <a
+                href="/tfg.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
+              >
+                PDF-ES
+              </a>
             </div>
           </div>
         </CardHeader>
@@ -284,6 +300,7 @@ export default function Home() {
     </div>
   </div>
 </Section>
+
 
        
       {/* Projects Section */}
