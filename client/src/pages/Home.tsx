@@ -36,7 +36,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function Home() {
   const { t } = useLanguage();
-
+const locale = useLocale();
   return (
     <div className="min-h-screen bg-background font-sans selection:bg-primary/20">
       <Navigation />
@@ -197,7 +197,7 @@ export default function Home() {
           </div>
         </div>
 
-    {/* VIEW CV */}
+   {/* VIEW CV */}
 <div className="pt-4">
   <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
     <Button
@@ -205,11 +205,10 @@ export default function Home() {
       variant="outline"
     >
       <Eye className="mr-2 h-4 w-4" />
-      {useLocale() === "es" ? "Ver CV" : "View CV"}
+      {locale === "es" ? "Ver CV" : "View CV"}
     </Button>
   </a>
 </div>
-
 
 
       
