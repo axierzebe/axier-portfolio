@@ -28,7 +28,7 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "hero.cta.contact": { EN: "Contact Me", ES: "Contactar" },
   "hero.cta.linkedin": { EN: "LinkedIn Profile", ES: "Perfil de LinkedIn" },
-  "hero.cta.cv": { EN: "Download CV", ES: "Descargar CV" },
+  "hero.cta.cv": { EN: "View CV", ES: "Ver CV" },
 
   // About
   "about.title": { EN: "About Me", ES: "Sobre Mí" },
