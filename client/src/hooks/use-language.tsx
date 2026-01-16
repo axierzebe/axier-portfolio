@@ -46,10 +46,10 @@ const translations: Record<string, Record<Language, string>> = {
   "exp.role1": { EN: "Final Degree Project – Elecnor", ES: "Trabajo Fin de Grado – Elecnor" },
   "exp.company1": { EN: "Resource Management in Electrical Distribution", ES: "Gestión de Recursos en la Distribución Eléctrica" },
   "exp.date1": { EN: "Sep 2024 – Jul 2025", ES: "Sep 2024 – Jul 2025" },
-  "exp.desc1": {
-  EN: "Professional training in electrical distribution, contributing to the operational management of work centers, personnel, and projects. Involvement in fault management and new electrical supply projects. Development of a custom LabVIEW application to optimize operational management and resource allocation.Final Degree Project report available in Spanish.",
-  ES: "Formación profesional en distribución eléctrica, participando en la gestión operativa de centros de trabajo, personal y proyectos. Colaboración en la resolución de averías y en proyectos de nuevos suministros eléctricos. Desarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa y la asignación de recursos.Memoria del TFG disponible en español."
-}
+  "exp.desc1": { 
+    EN: "Professional training in electrical distribution; managing worksites, personnel, and projects. Participated in fault management and new supply projects. Developed a custom LabVIEW application to improve operational management.", 
+    ES: "Formación profesional en distribución eléctrica; gestión de centros de trabajo, personal y proyectos. Participación en la gestión de averías y proyectos de nuevos suministros. Desarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa." 
+  },
 
 
 
