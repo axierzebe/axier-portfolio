@@ -224,23 +224,24 @@ export default function Home() {
 
       <Card className="border-border/50 hover:border-primary/50 transition-colors duration-300">
         <CardHeader className="relative">
-  {/* Fecha (primero) */}
-  <Badge
-    variant="secondary"
-    className="absolute top-4 right-20 w-fit font-mono"
-  >
-    {t("exp.date1")}
-  </Badge>
+  {/* Fecha + PDF en columna */}
+  <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
+    <Badge
+      variant="secondary"
+      className="w-fit font-mono"
+    >
+      {t("exp.date1")}
+    </Badge>
 
-  {/* Botón PDF (después) */}
-  <a
-    href="/tfg.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
-  >
-    PDF-ES
-  </a>
+    <a
+      href="/tfg.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
+    >
+      PDF-ES
+    </a>
+  </div>
 
   <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mt-6">
     <div>
