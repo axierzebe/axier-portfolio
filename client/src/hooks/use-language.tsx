@@ -54,13 +54,13 @@ const translations: Record<string, Record<Language, string>> = {
   // Projects
   "proj.title": { EN: "Projects", ES: "Proyectos" },
   "proj.1.title": { EN: "Low Power Single Phase Wind Generator", ES: "Generador Eólico Monofásico de Baja Potencia" },
-  "proj.1.desc": { EN: "Small-scale wind turbine (72.4 W) with Boost converter, MPPT control, and inverter synchronization.\nFull technical report in Basque.", ES: "Aerogenerador de pequeña escala (72,4 W) con convertidor Boost, control MPPT y sincronización de inversor.\nMemoria técnica completa en Euskera." },
+  "proj.1.desc": { EN: "Small-scale wind turbine (72.4 W) with Boost converter, MPPT control, and inverter synchronization.\n\nFull technical report in Basque.", ES: "Aerogenerador de pequeña escala (72,4 W) con convertidor Boost, control MPPT y sincronización de inversor.\n\nMemoria técnica completa en Euskera." },
   "proj.2.title": { EN: "Electric Scooter Implementation", ES: "Implementación de Patinete Eléctrico" },
-  "proj.2.desc": { EN: "Converted conventional scooter to electric; DC motor control, Li-Ion battery, PV charging.\nFull technical report in English.", ES: "Conversión de un patinete convencional a un modelo eléctrico; control de motor DC, batería de Li-Ion y estación de carga fotovoltaica.\nMemoria técnica completa en Ingles." },
+  "proj.2.desc": { EN: "Converted conventional scooter to electric; DC motor control, Li-Ion battery, PV charging.\n\nFull technical report in English.", ES: "Conversión de un patinete convencional a un modelo eléctrico; control de motor DC, batería de Li-Ion y estación de carga fotovoltaica.\n\nMemoria técnica completa en Ingles." },
   "proj.3.title": { EN: "Solar Thermal Collector", ES: "Colector Solar Térmico" },
-  "proj.3.desc": { EN: "Domestic hot water system with Arduino control, sensors, efficiency optimization.\nFull technical report in Spanish.", ES: "Sistema de agua caliente sanitaria con control mediante Arduino, sensores y optimización de eficiencia.\nMemoria técnica completa en Español." },
+  "proj.3.desc": { EN: "Domestic hot water system with Arduino control, sensors, efficiency optimization.\n\nFull technical report in Spanish.", ES: "Sistema de agua caliente sanitaria con control mediante Arduino, sensores y optimización de eficiencia.\n\nMemoria técnica completa en Español." },
   "proj.4.title": { EN: "Off-Grid Hydraulic Power Plant", ES: "Central Hidráulica Aislada" },
-  "proj.4.desc": { EN: "Off-grid hydro system for a house, pump control, PLC monitoring.\nFull technical report in Basque.", ES: "Sistema hidroeléctrico aislado con control de bombas y monitorización PLC.\nMemoria técnica completa en Euskera." },
+  "proj.4.desc": { EN: "Off-grid hydro system for a house, pump control, PLC monitoring.\n\nFull technical report in Basque.", ES: "Sistema hidroeléctrico aislado con control de bombas y monitorización PLC.\n\nMemoria técnica completa en Euskera." },
 
   // Project Skills - Wind Generator
   "proj.1.skill.1": { EN: "MATLAB & Simulink", ES: "MATLAB y Simulink" },
