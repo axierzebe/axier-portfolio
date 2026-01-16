@@ -43,7 +43,7 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section id="hero" className="min-h-screen flex items-center justify-center relative pt-20">
+        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
           {/* Abstract Background */}
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-background to-background" />
           <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background to-transparent" />
