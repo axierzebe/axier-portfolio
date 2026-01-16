@@ -367,6 +367,7 @@ export default function Home() {
 </Section>
 
 
+       
        {/* Skills Section */}
 <Section id="skills" className="py-16">
   <SectionHeader title={t("nav.skills")} />
@@ -413,50 +414,6 @@ export default function Home() {
     />
   </div>
 </Section>
-
-{/* =====================================================
-   SkillCard Component (interactividad sutil)
-===================================================== */}
-
-function SkillCard({ title, icon, skills }: { title: string; icon: React.ReactNode; skills: string[] }) {
-  return (
-    <Card
-      className="
-        bg-background/60 backdrop-blur-sm
-        border border-border/50
-        transition-all duration-300 ease-out
-        hover:bg-background/80
-        hover:shadow-md
-      "
-    >
-      <CardHeader className="flex flex-row items-center gap-3 pb-2">
-        <div className="transition-transform duration-300 hover:scale-105">
-          {icon}
-        </div>
-        <CardTitle className="text-lg font-bold">{title}</CardTitle>
-      </CardHeader>
-
-      <CardContent>
-        <div className="flex flex-wrap gap-2">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="
-                px-3 py-1 bg-muted rounded-md
-                text-sm text-muted-foreground font-medium
-                transition-colors duration-200
-                hover:bg-primary/10 hover:text-primary
-                cursor-default
-              "
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
-  );
-}
 
 
 
