@@ -217,13 +217,13 @@ export default function Home() {
         {/* Experience Section */}
 <Section id="experience" className="py-16">
   <SectionHeader title={t("exp.title")} subtitle="Professional Journey" />
+
   <div className="relative border-l-2 border-primary/20 ml-4 md:ml-0 md:pl-8 space-y-12">
     <div className="relative">
       <span className="absolute -left-[3.25rem] md:-left-[2.65rem] top-2 h-5 w-5 rounded-full border-4 border-background bg-primary" />
 
       <Card className="border-border/50 hover:border-primary/50 transition-colors duration-300">
         <CardHeader className="relative">
-          {/* PDF TFG (igual que Projects) */}
           <a
             href="/tfg.pdf"
             target="_blank"
@@ -235,12 +235,17 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
             <div>
-              <CardTitle className="text-xl font-bold text-primary">{t("exp.role1")}</CardTitle>
+              <CardTitle className="text-xl font-bold text-primary">
+                {t("exp.role1")}
+              </CardTitle>
               <CardDescription className="text-lg font-medium text-foreground mt-1">
                 {t("exp.company1")}
               </CardDescription>
             </div>
-            <Badge variant="secondary" className="w-fit font-mono">{t("exp.date1")}</Badge>
+
+            <Badge variant="secondary" className="w-fit font-mono">
+              {t("exp.date1")}
+            </Badge>
           </div>
         </CardHeader>
 
