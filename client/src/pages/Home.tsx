@@ -411,30 +411,23 @@ function ProjectCard({
   description,
   tags,
   pdfHref,
+  downloadName,
 }: {
   icon: React.ReactNode;
   title: string;
   description: string;
   tags: string[];
   pdfHref: string;
+  downloadName: string;
 }) {
   return (
-    <a
-      href={pdfHref}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block h-full group focus:outline-none"
-      aria-label={`Open PDF: ${title}`}
-    >
+    <a href={pdfHref} download={downloadName} className="block h-full group">
       <Card
         className="
           h-full flex flex-col overflow-hidden
-          border-border/60
-          cursor-pointer
+          border-border/60 cursor-pointer
           transition-all duration-300
           hover:-translate-y-1 hover:shadow-lg hover:border-primary/40 hover:bg-primary/5
-          active:scale-[0.99]
-          focus-visible:ring-2 focus-visible:ring-primary/40
         "
       >
         <CardHeader>
@@ -442,23 +435,22 @@ function ProjectCard({
             {icon}
           </div>
 
-          <CardTitle className="text-xl group-hover:text-primary transition-colors flex items-center justify-between gap-3">
+          <CardTitle className="text-xl flex items-center justify-between gap-2">
             <span>{title}</span>
-            <span className="text-xs text-muted-foreground group-hover:text-primary transition-colors">
-              Open PDF ↗
+            <span className="text-xs text-muted-foreground group-hover:text-primary">
+              Download PDF ⬇
             </span>
           </CardTitle>
         </CardHeader>
 
         <CardContent className="flex-1 flex flex-col">
           <p className="text-muted-foreground mb-6 line-clamp-3">{description}</p>
-
-          <div className="flex flex-wrap gap-2 mt-auto">
+          <div className="flex flex-wrap gap-2 mt-auto pointer-events-none">
             {tags.map((tag) => (
               <Badge
                 key={tag}
                 variant="secondary"
-                className="bg-primary/10 text-primary py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm pointer-events-none"
+                className="bg-primary/10 text-primary py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm"
               >
                 {tag}
               </Badge>
@@ -469,6 +461,7 @@ function ProjectCard({
     </a>
   );
 }
+
 
 
 function SkillCard({ title, icon, skills }: { title: string, icon: React.ReactNode, skills: string[] }) {
