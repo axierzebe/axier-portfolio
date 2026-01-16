@@ -424,12 +424,12 @@ function ProjectCard({
         {pdfHref && (
           <a
   href={pdfHref}
-  target="_blank"
-  rel="noopener noreferrer"
+  download={(pdfHref.split("/").pop() || "project.pdf")}
   className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
 >
-  View PDF 
+  Download PDF ↓
 </a>
+
 
       
         )}
