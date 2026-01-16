@@ -176,12 +176,19 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="pt-4">
-                  <a href="/cv.pdf" download="CV_Axier_Ceberio.pdf">
-                    <Button className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20" variant="outline">
-                      <FileDown className="mr-2 h-4 w-4" /> {t("hero.cta.cv")}
-                    </Button>
-                  </a>
-                </div>
+  <a
+    href="/cv.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button
+      className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20"
+      variant="outline"
+    >
+      <FileDown className="mr-2 h-4 w-4" /> {t("hero.cta.cv")}
+    </Button>
+  </a>
+</div>
               </CardContent>
             </Card>
           </div>
