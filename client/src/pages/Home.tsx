@@ -468,6 +468,7 @@ function ProjectCard({
 
 
 
+
 function SkillCard({ title, icon, skills }: { title: string, icon: React.ReactNode, skills: string[] }) {
   return (
     <Card className="h-full border-border/50 bg-background/50">
