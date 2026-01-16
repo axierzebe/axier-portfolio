@@ -367,45 +367,111 @@ export default function Home() {
 </Section>
 
 
-        {/* Skills Section */}
-        <Section id="skills" className="py-16">
-          <SectionHeader title={t("nav.skills")} />
-          <div className="grid md:grid-cols-3 gap-8">
-            <SkillCard 
-              title={t("skills.title")} 
-              icon={<Cpu className="h-6 w-6 text-primary" />}
-              skills={[
-                t("skills.tech.python"),
-                t("skills.tech.matlab"),
-                t("skills.tech.labview"),
-                t("skills.tech.arduino"),
-                t("skills.tech.ti"),
-                t("skills.tech.tableau"),
-                t("skills.tech.sql"),
-                t("skills.tech.ml"),
-                t("skills.tech.mlops"),
-                t("skills.tech.solidworks")
-              ]}
-            />
-            <SkillCard 
-              title={t("skills.soft")} 
-              icon={<Brain className="h-6 w-6 text-secondary" />}
-              skills={[
-                t("skills.soft.leadership"),
-                t("skills.soft.comm"),
-                t("skills.soft.adapt"),
-                t("skills.soft.team"),
-                t("skills.soft.problem"),
-                t("skills.soft.strategic")
-              ]}
-            />
-            <SkillCard 
-              title={t("skills.lang")} 
-              icon={<Languages className="h-6 w-6 text-purple-500" />}
-              skills={[t("skills.lang.en"), t("skills.lang.es"), t("skills.lang.eu")]}
-            />
-          </div>
-        </Section>
+       {/* Skills Section */}
+<Section id="skills" className="py-16">
+  <SectionHeader title={t("nav.skills")} />
+
+  <div className="grid md:grid-cols-3 gap-8">
+    <SkillCard 
+      title={t("skills.title")} 
+      icon={<Cpu className="h-6 w-6 text-primary" />}
+      skills={[
+        t("skills.tech.python"),
+        t("skills.tech.matlab"),
+        t("skills.tech.labview"),
+        t("skills.tech.arduino"),
+        t("skills.tech.ti"),
+        t("skills.tech.tableau"),
+        t("skills.tech.sql"),
+        t("skills.tech.ml"),
+        t("skills.tech.mlops"),
+        t("skills.tech.solidworks")
+      ]}
+    />
+
+    <SkillCard 
+      title={t("skills.soft")} 
+      icon={<Brain className="h-6 w-6 text-secondary" />}
+      skills={[
+        t("skills.soft.leadership"),
+        t("skills.soft.comm"),
+        t("skills.soft.adapt"),
+        t("skills.soft.team"),
+        t("skills.soft.problem"),
+        t("skills.soft.strategic")
+      ]}
+    />
+
+    <SkillCard 
+      title={t("skills.lang")} 
+      icon={<Languages className="h-6 w-6 text-purple-500" />}
+      skills={[
+        t("skills.lang.en"),
+        t("skills.lang.es"),
+        t("skills.lang.eu")
+      ]}
+    />
+  </div>
+</Section>
+
+{/* =====================================================
+   SkillCard Component (interactividad sutil)
+===================================================== */}
+
+function SkillCard({
+  title,
+  icon,
+  skills,
+}: {
+  title: string;
+  icon: React.ReactNode;
+  skills: string[];
+}) {
+  return (
+    <Card
+      className="
+        bg-background/60 backdrop-blur-sm
+        border border-border/50
+        transition-all duration-300 ease-out
+        hover:bg-background/80
+        hover:shadow-md
+      "
+    >
+      <CardHeader className="flex flex-row items-center gap-3 pb-2">
+        <div className="transition-transform duration-300 group-hover:scale-105">
+          {icon}
+        </div>
+        <CardTitle className="text-lg font-bold">
+          {title}
+        </CardTitle>
+      </CardHeader>
+
+      <CardContent>
+        <div className="flex flex-wrap gap-2">
+          {skills.map((skill) => (
+            <span
+              key={skill}
+              className="
+                px-3 py-1
+                bg-muted
+                rounded-md
+                text-sm
+                text-muted-foreground
+                font-medium
+                transition-colors duration-200
+                hover:bg-primary/10 hover:text-primary
+                cursor-default
+              "
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 
        {/* Education Section */}
 <Section id="education" className="bg-muted/30 rounded-3xl py-16">
