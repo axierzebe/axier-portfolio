@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useLocale } from "next-intl";
 import {
   Zap,
   BarChart,
@@ -208,7 +209,7 @@ const locale = useLocale()
       variant="outline"
     >
       <Eye className="mr-2 h-4 w-4" />
-      {locale === "es" ? "Ver CV" : "View CV"}
+      {useLocale() === "es" ? "Ver CV" : "View CV"}
     </Button>
   </a>
 </div>
