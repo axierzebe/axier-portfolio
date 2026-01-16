@@ -42,7 +42,8 @@ const translations: Record<string, Record<Language, string>> = {
   },
 
   // Experience
-  "exp.title": { EN: "Experience", ES: "Experiencia" },
+  "exp.title": { EN: "Experience", ES: "Experiencia" }, 
+  "exp.subtitle": { EN: "Real-world professional experience", ES: "Experiencia profesional real" },
   "exp.role1": { EN: "Final Degree Project – Elecnor", ES: "Trabajo Fin de Grado – Elecnor" },
   "exp.company1": { EN: "Resource Management in Electrical Distribution", ES: "Gestión de Recursos en la Distribución Eléctrica" },
   "exp.date1": { EN: "Sep 2024 – Jul 2025", ES: "Sep 2024 – Jul 2025" },
@@ -63,7 +64,7 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Projects
   "proj.title": { EN: "Projects", ES: "Proyectos" },
-  "proj.subtitle": { EN: "Selected engineering projects focused on real-world energy systems, control, optimization, and data-driven decision-making.", ES: "Proyectos de ingeniería seleccionados enfocados en sistemas energéticos reales, control, optimización y toma de decisiones basada en datos." },
+  "proj.subtitle": { EN: "Selected engineering projects focused on real-world energy systems, control, optimization, and data-driven decision-making", ES: "Proyectos de ingeniería seleccionados enfocados en sistemas energéticos reales, control, optimización y toma de decisiones basada en datos" },
   "proj.1.title": { EN: "Low Power Single Phase Wind Generator", ES: "Generador Eólico Monofásico de Baja Potencia" },
   "proj.1.desc": { EN: "Designed and implemented a small-scale single-phase wind generation system including power electronics, MPPT control, and inverter synchronization.\n\nFull technical report in Basque.", ES: "Diseño e implementación de un sistema de generación eólica monofásica de pequeña escala, incluyendo electrónica de potencia, control MPPT y sincronización del inversor.\n\nMemoria técnica completa en Euskera." },
   "proj.2.title": { EN: "Electric Scooter Implementation", ES: "Implementación de Patinete Eléctrico" },
