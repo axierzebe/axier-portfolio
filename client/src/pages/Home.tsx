@@ -1,4 +1,3 @@
-"use client";
 import { Navigation } from "@/components/Navigation";
 import { Section, SectionHeader } from "@/components/Section";
 import { useLanguage } from "@/hooks/use-language";
@@ -37,7 +36,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function Home() {
   const { t } = useLanguage();
-const locale = useLocale();
+
   return (
     <div className="min-h-screen bg-background font-sans selection:bg-primary/20">
       <Navigation />
@@ -205,8 +204,7 @@ const locale = useLocale();
       className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20"
       variant="outline"
     >
-      <Eye className="mr-2 h-4 w-4" />
-      {locale === "es" ? "Ver CV" : "View CV"}
+      <Eye className="mr-2 h-4 w-4" /> {t("hero.cta.cv")}
     </Button>
   </a>
 </div>
