@@ -255,16 +255,27 @@ export default function Home() {
   </div>
 </CardHeader>
 
-        <CardContent>
-          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-            {t("exp.desc1")}
-          </p>
-        </CardContent>
-      </Card>
-    </div>
-  </div>
-</Section>
+        <CardContent className="flex-1 flex flex-col">
+        {/* 👇 AQUÍ FUNCIONA EL \n */}
+        <p className="text-muted-foreground mb-6 whitespace-pre-line">
+          {description}
+        </p>
 
+        <div className="flex flex-wrap gap-2 mt-auto">
+          {tags.map(tag => (
+            <Badge
+              key={tag}
+              variant="secondary"
+              className="bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-default py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm"
+            >
+              {tag}
+            </Badge>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
       {/* Projects Section */}
 <Section id="projects" className="bg-slate-50 dark:bg-slate-900/20 rounded-3xl py-16">
   <SectionHeader title={t("proj.title")} subtitle="Engineering & Innovation" />
