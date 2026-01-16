@@ -139,7 +139,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About Section */}
+       {/* About Section */}
 <Section id="about" className="bg-muted/30 rounded-3xl my-12 py-16">
   <SectionHeader title={t("about.title")} />
 
@@ -198,16 +198,12 @@ export default function Home() {
 
         {/* VIEW CV */}
         <div className="pt-4">
-          <a
-            href="/cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
             <Button
               className="w-full rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border-primary/20"
               variant="outline"
             >
-              <Eye className="mr-2 h-4 w-4" /> View / Ver
+              <Eye className="mr-2 h-4 w-4" /> {t("about.cv.view")}
             </Button>
           </a>
         </div>
