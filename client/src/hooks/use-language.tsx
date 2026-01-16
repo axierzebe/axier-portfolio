@@ -51,7 +51,15 @@ const translations: Record<string, Record<Language, string>> = {
     ES: "Formación profesional en distribución eléctrica en un entorno operativo real.\nParticipación en la gestión de averías y proyectos de nuevos suministros eléctricos.\nDesarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa y la asignación de recursos.\n\nMemoria del TFG disponible en Español." 
   },
 
-
+// Experience Skills
+"exp.skill.1": { EN: "Electrical Distribution", ES: "Distribución eléctrica" },
+"exp.skill.2": { EN: "Fault Management", ES: "Gestión de averías" },
+"exp.skill.3": { EN: "New Service Connections", ES: "Nuevos suministros eléctricos" },
+"exp.skill.4": { EN: "Resource Planning", ES: "Planificación de recursos" },
+"exp.skill.5": { EN: "Operational Coordination", ES: "Coordinación operativa" },
+"exp.skill.6": { EN: "Process Optimization", ES: "Optimización de procesos" },
+"exp.skill.7": { EN: "LabVIEW", ES: "LabVIEW" },
+"exp.skill.8": { EN: "Data Tracking & Reporting", ES: "Seguimiento y reporte de datos" },
 
   // Projects
   "proj.title": { EN: "Projects", ES: "Proyectos" },
