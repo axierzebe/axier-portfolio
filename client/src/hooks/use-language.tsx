@@ -23,8 +23,8 @@ const translations: Record<string, Record<Language, string>> = {
   // Hero
   "hero.greeting": { EN: "Hello, I'm", ES: "Hola, soy" },
   "hero.role": { 
-    EN: "Energy Engineer and Business Analytics student specialized in data science and artificial intelligence, focused on optimizing energy systems through data-driven insights.", 
-    ES: "Ingeniero en Energía y estudiante de Analítica de Negocio, especializado en ciencia de datos e inteligencia artificial, enfocado en optimizar sistemas energéticos mediante análisis de datos." 
+    EN: "Energy Engineer with hands-on experience in electrical distribution and renewable systems, currently specializing in Business Analytics and Applied AI. Focused on transforming data into operational improvements, automation, and smarter energy decisions.", 
+    ES: "Ingeniero Energético con experiencia práctica en distribución eléctrica y sistemas de energías renovables, actualmente especializado en Business Analytics e Inteligencia Artificial Aplicada. Enfocado en transformar datos en mejoras operativas, automatización y decisiones energéticas más eficientes." 
   },
   "hero.cta.contact": { EN: "Contact Me", ES: "Contactar" },
   "hero.cta.linkedin": { EN: "LinkedIn Profile", ES: "Perfil de LinkedIn" },
@@ -37,8 +37,8 @@ const translations: Record<string, Record<Language, string>> = {
   "about.exp": { EN: "Experience", ES: "Experiencia Profesional" },
   "about.exp.desc": { EN: "Electrical Distribution & Project Management", ES: "Distribución Eléctrica y Gestión de Proyectos" },
   "about.bio": { 
-    EN: "Energy Engineer with a strong foundation in electrical distribution and renewable systems, currently expanding expertise in Business Analytics and AI. Passionate about leveraging data-driven insights to optimize energy solutions and drive operational efficiency.", 
-    ES: "Ingeniero de la Energía con una sólida base en distribución eléctrica y sistemas renovables, actualmente ampliando mi especialización en Business Analytics e IA. Me apasiona utilizar el análisis de datos para optimizar soluciones energéticas e impulsar la eficiencia operativa." 
+    EN: "Energy Engineer with a strong foundation in electrical distribution, renewable energy systems, and real operational environments. Currently expanding expertise in Business Analytics and Artificial Intelligence, with a strong interest in data-driven optimization, automation, and decision-making.\nExperienced working under real-world constraints, collaborating with technical teams, and developing practical tools to improve efficiency and resource management.", 
+    ES: "Ingeniero Energético con una sólida base en distribución eléctrica, sistemas de energías renovables y entornos operativos reales. Actualmente ampliando conocimientos en Business Analytics e Inteligencia Artificial, con un fuerte interés en la optimización basada en datos, la automatización y la toma de decisiones.\nExperiencia trabajando bajo condiciones reales, colaborando con equipos técnicos y desarrollando herramientas prácticas para mejorar la eficiencia y la gestión de recursos." 
   },
 
   // Experience
@@ -47,8 +47,8 @@ const translations: Record<string, Record<Language, string>> = {
   "exp.company1": { EN: "Resource Management in Electrical Distribution", ES: "Gestión de Recursos en la Distribución Eléctrica" },
   "exp.date1": { EN: "Sep 2024 – Jul 2025", ES: "Sep 2024 – Jul 2025" },
   "exp.desc1": { 
-    EN: "Professional training in electrical distribution within a real operational environment.\nParticipation in fault management and new electrical supply projects.\nDevelopment of a custom LabVIEW application to optimize operational management and resource allocation.\n\nFinal Degree Project report available in Spanish.", 
-    ES: "Formación profesional en distribución eléctrica en un entorno operativo real.\nParticipación en la gestión de averías y proyectos de nuevos suministros eléctricos.\nDesarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa y la asignación de recursos.\n\nMemoria del TFG disponible en Español." 
+    EN: "Professional training within a real electrical distribution operational environment.\n\n• Supported fault management and new electrical service connection projects\n• Assisted in resource planning and operational coordination for low-voltage distribution works\n• Designed and developed a custom LabVIEW application to optimize operational management, data tracking, and resource allocation\n• Improved visibility and efficiency in day-to-day operational decision-making\n\nFinal Degree Project report available in Spanish.", 
+    ES: "Formación profesional en un entorno operativo real de distribución eléctrica.\n\n• Apoyo en la gestión de averías y nuevos proyectos de suministro eléctrico\n• Asistencia en la planificación de recursos y coordinación operativa de trabajos de baja tensión\n• Diseño y desarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa, el seguimiento de datos y la asignación de recursos\n• Mejora de la visibilidad y eficiencia en la toma de decisiones operativas diarias\n\nMemoria del TFG disponible en Español." 
   },
 
 // Experience Skills
@@ -64,7 +64,7 @@ const translations: Record<string, Record<Language, string>> = {
   // Projects
   "proj.title": { EN: "Projects", ES: "Proyectos" },
   "proj.1.title": { EN: "Low Power Single Phase Wind Generator", ES: "Generador Eólico Monofásico de Baja Potencia" },
-  "proj.1.desc": { EN: "Small-scale wind turbine (72.4 W) with Boost converter, MPPT control, and inverter synchronization.\n\nFull technical report in Basque.", ES: "Aerogenerador de pequeña escala (72,4 W) con convertidor Boost, control MPPT y sincronización de inversor.\n\nMemoria técnica completa en Euskera." },
+  "proj.1.desc": { EN: "Designed and implemented a small-scale single-phase wind generation system including power electronics, MPPT control, and inverter synchronization.\n\nFull technical report in Basque.", ES: "Diseño e implementación de un sistema de generación eólica monofásica de pequeña escala, incluyendo electrónica de potencia, control MPPT y sincronización del inversor.\n\nMemoria técnica completa en Euskera." },
   "proj.2.title": { EN: "Electric Scooter Implementation", ES: "Implementación de Patinete Eléctrico" },
   "proj.2.desc": { EN: "Converted conventional scooter to electric; DC motor control, Li-Ion battery, PV charging.\n\nFull technical report in English.", ES: "Conversión de un patinete convencional a un modelo eléctrico; control de motor DC, batería de Li-Ion y estación de carga fotovoltaica.\n\nMemoria técnica completa en Ingles." },
   "proj.3.title": { EN: "Solar Thermal Collector", ES: "Colector Solar Térmico" },
@@ -122,9 +122,9 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Skill Items - Interpersonal
   "skills.soft.leadership": { EN: "Leadership", ES: "Liderazgo" },
-  "skills.soft.comm": { EN: "Communication Skills", ES: "Habilidades de comunicación" },
+  "skills.soft.comm": { EN: "Professional Communication", ES: "Habilidades de comunicación" },
   "skills.soft.adapt": { EN: "Adaptability", ES: "Adaptabilidad" },
-  "skills.soft.team": { EN: "Teamwork", ES: "Trabajo en equipo" },
+  "skills.soft.team": { EN: "Cross-functional Teamwork", ES: "Trabajo en equipo" },
   "skills.soft.problem": { EN: "Problem Solving", ES: "Resolución de problemas" },
   "skills.soft.strategic": { EN: "Strategic Thinking", ES: "Pensamiento estratégico" },
 
@@ -133,14 +133,14 @@ const translations: Record<string, Record<Language, string>> = {
   "edu.1.school": { EN: "Sacred Heart University", ES: "Sacred Heart University" },
   "edu.1.degree": { EN: "Master’s in Business Analytics with Applied AI", ES: "Máster en Business Analytics con IA Aplicada" },
   "edu.1.date": { EN: "Expected Dec 2026", ES: "Finalización prevista en dic. 2026" },
-  "edu.1.note": { EN: "D1 Student Athlete. Maximum Academic and Athletics Scholarship.", ES: "Estudiante Atleta D1. Beca académica y deportiva máxima otorgada por la universidad." },
+  "edu.1.note": { EN: "STEM-designated program | Eligible for OPT\nD1 Student Athlete. Maximum Academic and Athletics Scholarship", ES: "Programa STEM | Elegible para OPT\nEstudiante Atleta D1. Beca académica y deportiva máxima otorgada por la universidad" },
   "edu.2.school": { EN: "Mondragón University", ES: "Mondragón Unibertsitatea" },
   "edu.2.degree": { EN: "Bachelor’s Degree in Energy Engineering", ES: "Grado en Ingeniería de la Energía" },
   "edu.2.date": { EN: "Sep 2021 – Jul 2025", ES: "Sep 2021 – Jul 2025" },
 
   // Contact
   "contact.title": { EN: "Get In Touch", ES: "Contacto" },
-  "contact.subtitle": { EN: "Open to new professional opportunities and collaborations", ES: "Abierto a nuevas oportunidades profesionales y colaboraciones" },
+  "contact.subtitle": { EN: "Open to internships, OPT opportunities, and entry-level roles in energy engineering, data analytics, and applied AI. Work Authorization: Eligible for OPT (STEM)", ES: "Abierto a prácticas, oportunidades OPT y puestos junior en ingeniería energética, analítica de datos e inteligencia artificial aplicada. Autorización de trabajo: Elegible para OPT (STEM)" },
   "contact.name": { EN: "Name", ES: "Nombre" },
   "contact.email": { EN: "Email", ES: "Correo electrónico" },
   "contact.message": { EN: "Message", ES: "Mensaje" },
