@@ -256,7 +256,7 @@ export default function Home() {
       t("proj.1.skill.4"),
       t("proj.1.skill.5")
     ]}
-    pdfs={[{ label: "PDF-EU", href: "/wind-generator.pdf" }]}
+    pdfs={[{ label: "PDF-EUS", href: "/wind-generator.pdf" }]}
   />
 
   <ProjectCard
@@ -284,7 +284,7 @@ export default function Home() {
       t("proj.3.skill.4"),
       t("proj.3.skill.5")
     ]}
-    pdfs={[{ label: "PDF-EU", href: "/solar-project.pdf" }]}
+    pdfs={[{ label: "PDF-ES", href: "/solar-project.pdf" }]}
   />
 
   <ProjectCard
@@ -298,7 +298,7 @@ export default function Home() {
       t("proj.4.skill.4"),
       t("proj.4.skill.5")
     ]}
-    pdfs={[{ label: "PDF-ES", href: "/storage-system.pdf" }]}
+    pdfs={[{ label: "PDF-EUS", href: "/storage-system.pdf" }]}
   />
 </div>
 </Section>
