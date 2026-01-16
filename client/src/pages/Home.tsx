@@ -213,69 +213,60 @@ export default function Home() {
           </div>
         </Section>
 
-       {/* Projects Section */}
-<Section id="projects" className="bg-slate-50 dark:bg-slate-900/20 rounded-3xl py-16">
-  <SectionHeader title={t("proj.title")} subtitle="Engineering & Innovation" />
-  <div className="grid md:grid-cols-2 gap-8">
-
-    <ProjectCard 
-      pdfHref="/sorgailu-eoliko-monofasikoa.pdf"
-      icon={<Wind className="h-8 w-8 text-blue-500" />}
-      title={t("proj.1.title")}
-      description={t("proj.1.desc")}
-      tags={[
-        t("proj.1.skill.1"),
-        t("proj.1.skill.2"),
-        t("proj.1.skill.3"),
-        t("proj.1.skill.4"),
-        t("proj.1.skill.5")
-      ]}
-    />
-
-    <ProjectCard 
-      pdfHref="/electric-scooter.pdf"
-      icon={<Battery className="h-8 w-8 text-green-500" />}
-      title={t("proj.2.title")}
-      description={t("proj.2.desc")}
-      tags={[
-        t("proj.2.skill.1"),
-        t("proj.2.skill.2"),
-        t("proj.2.skill.3"),
-        t("proj.2.skill.4"),
-        t("proj.2.skill.5")
-      ]}
-    />
-
-    <ProjectCard 
-      pdfHref="/colector-solar-termico.pdf"
-      icon={<Sun className="h-8 w-8 text-yellow-500" />}
-      title={t("proj.3.title")}
-      description={t("proj.3.desc")}
-      tags={[
-        t("proj.3.skill.1"),
-        t("proj.3.skill.2"),
-        t("proj.3.skill.3"),
-        t("proj.3.skill.4"),
-        t("proj.3.skill.5")
-      ]}
-    />
-
-    <ProjectCard 
-      pdfHref="/zentral-hidraulikoa.pdf"
-      icon={<Droplets className="h-8 w-8 text-cyan-500" />}
-      title={t("proj.4.title")}
-      description={t("proj.4.desc")}
-      tags={[
-        t("proj.4.skill.1"),
-        t("proj.4.skill.2"),
-        t("proj.4.skill.3"),
-        t("proj.4.skill.4"),
-        t("proj.4.skill.5")
-      ]}
-    />
-
-  </div>
-</Section>
+      {/* Projects Section */}
+        <Section id="projects" className="bg-slate-50 dark:bg-slate-900/20 rounded-3xl py-16">
+          <SectionHeader title={t("proj.title")} subtitle="Engineering & Innovation" />
+          <div className="grid md:grid-cols-2 gap-8">
+            <ProjectCard 
+              icon={<Wind className="h-8 w-8 text-blue-500" />}
+              title={t("proj.1.title")}
+              description={t("proj.1.desc")}
+              tags={[
+                t("proj.1.skill.1"),
+                t("proj.1.skill.2"),
+                t("proj.1.skill.3"),
+                t("proj.1.skill.4"),
+                t("proj.1.skill.5")
+              ]}
+            />
+            <ProjectCard 
+              icon={<Battery className="h-8 w-8 text-green-500" />}
+              title={t("proj.2.title")}
+              description={t("proj.2.desc")}
+              tags={[
+                t("proj.2.skill.1"),
+                t("proj.2.skill.2"),
+                t("proj.2.skill.3"),
+                t("proj.2.skill.4"),
+                t("proj.2.skill.5")
+              ]}
+            />
+            <ProjectCard 
+              icon={<Sun className="h-8 w-8 text-yellow-500" />}
+              title={t("proj.3.title")}
+              description={t("proj.3.desc")}
+              tags={[
+                t("proj.3.skill.1"),
+                t("proj.3.skill.2"),
+                t("proj.3.skill.3"),
+                t("proj.3.skill.4"),
+                t("proj.3.skill.5")
+              ]}
+            />
+            <ProjectCard 
+              icon={<Droplets className="h-8 w-8 text-cyan-500" />}
+              title={t("proj.4.title")}
+              description={t("proj.4.desc")}
+              tags={[
+                t("proj.4.skill.1"),
+                t("proj.4.skill.2"),
+                t("proj.4.skill.3"),
+                t("proj.4.skill.4"),
+                t("proj.4.skill.5")
+              ]}
+            />
+          </div>
+        </Section>
 
         {/* Skills Section */}
         <Section id="skills" className="py-16">
