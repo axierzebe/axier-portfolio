@@ -423,13 +423,17 @@ function ProjectCard({
       <CardHeader className="relative">
         {pdfHref && (
           <a
-            href={pdfHref}
-            download
-            className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
-          >
-            PDF ↓
-          </a>
+  href={pdfHref}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
+>
+  View PDF 
+</a>
+
+      
         )}
+
 
         <div className="mb-4 p-3 bg-muted rounded-xl w-fit group-hover:bg-primary/10 transition-colors">
           {icon}
