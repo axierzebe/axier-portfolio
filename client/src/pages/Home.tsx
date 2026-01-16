@@ -420,50 +420,45 @@ function ProjectCard({
 }) {
   return (
     <Card className="group hover:-translate-y-1 transition-all duration-300 hover:shadow-lg border-border/60 overflow-hidden h-full flex flex-col">
-      <CardHeader>
+      <CardHeader className="relative">
+        {pdfHref && (
+          <a
+            href={pdfHref}
+            download
+            className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
+          >
+            PDF ↓
+          </a>
+        )}
+
         <div className="mb-4 p-3 bg-muted rounded-xl w-fit group-hover:bg-primary/10 transition-colors">
           {icon}
         </div>
+
         <CardTitle className="text-xl group-hover:text-primary transition-colors">
           {title}
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="flex-1 flex flex-col gap-4">
-        <p className="text-muted-foreground line-clamp-3">
-          {description}
-        </p>
+      <CardContent className="flex-1 flex flex-col">
+        <p className="text-muted-foreground mb-6 line-clamp-3">{description}</p>
 
-        {/* Footer */}
-        <div className="mt-auto flex items-end justify-between gap-4">
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2">
-            {tags.map(tag => (
-              <Badge
-                key={tag}
-                variant="secondary"
-                className="bg-primary/10 text-primary py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20"
-              >
-                {tag}
-              </Badge>
-            ))}
-          </div>
-
-          {/* PDF link */}
-          {pdfHref && (
-            <a
-              href={pdfHref}
-              download
-              className="text-xs text-muted-foreground hover:text-primary transition-colors whitespace-nowrap"
+        <div className="flex flex-wrap gap-2 mt-auto">
+          {tags.map(tag => (
+            <Badge
+              key={tag}
+              variant="secondary"
+              className="bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-default py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm"
             >
-              PDF ↓
-            </a>
-          )}
+              {tag}
+            </Badge>
+          ))}
         </div>
       </CardContent>
     </Card>
   )
 }
+
 
 
 function SkillCard({ title, icon, skills }: { title: string, icon: React.ReactNode, skills: string[] }) {
