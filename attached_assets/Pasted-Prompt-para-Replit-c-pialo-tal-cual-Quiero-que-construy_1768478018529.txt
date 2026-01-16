@@ -1,0 +1,141 @@
+Prompt para Replit (cópialo tal cual)
+
+Quiero que construyas un portfolio web moderno y responsive para mí, usando React + Vite + TailwindCSS (TypeScript si puedes). El sitio debe ser rápido, limpio, con estética profesional (tipo “tech/analytics + energy”). Debe estar listo para desplegar.
+
+1) Requisitos clave
+
+Bilingüe (EN/ES): En el header debe haber un switch/selector (EN | ES).
+
+Al cambiar idioma, cambia todo el texto del sitio (menús, botones, títulos, descripciones).
+
+Guarda la preferencia en localStorage y por defecto usa inglés (EN).
+
+Implementa i18n simple con un objeto translations (sin librerías externas si no hace falta).
+
+Navegación tipo single-page con secciones y scroll suave: Home, About, Experience, Projects, Skills, Education, Contact.
+
+Diseño:
+
+Header fijo con blur/transparencia.
+
+Hero con mi nombre, título, y CTAs.
+
+Cards para experiencia y proyectos.
+
+Sección Skills con tags.
+
+Footer simple.
+
+SEO básico: title, meta description, OpenGraph mínimo.
+
+Accesibilidad: botones con aria-label, buen contraste, navegación por teclado.
+
+2) Contenido (usar exactamente esta info)
+
+Nombre: Axier Ceberio Guereño
+Ubicación: Bridgeport, CT 06606
+Email: axierzebe@gmail.com
+
+Teléfono: (203) 418-1294
+LinkedIn: www.linkedin.com/in/axier-zeberio-017b6a340
+
+Education
+
+Mondragón University (Hernani, Spain)
+
+Bachelor’s Degree in Energy Engineering (Sep 2021 – Jul 2025)
+
+Sacred Heart University (Fairfield, CT)
+
+Master’s in Business Analytics with Applied Artificial Intelligence (Expected Dec 2026)
+
+D1 Student Athlete
+
+Maximum Academic and Athletics Scholarship offered by Sacred Heart University
+
+Relevant Experience
+
+Elecnor Servicios y Proyectos, S.A.U. | Energy Engineer – Resource Management in the Field of Electrical Distribution
+Aduna, Spain | Sep 2024 – Jul 2025
+
+Professional training in electrical distribution; managing worksites, personnel, and projects.
+
+Participated in fault management and new supply projects: planning, field coordination, safety supervision, and technical-administrative closure.
+
+Developed a custom LabVIEW application to improve operational management, automate work registration, and reinforce safety controls.
+
+Technical Projects (con fechas)
+
+Design and Assembly of a Low Power Single Phase Wind Generator (Apr 2024 – Jun 2024)
+
+Small-scale wind turbine (72.4 W) with Boost converter, MPPT control, and inverter synchronization using myRIO and PLL.
+
+Implementation of an Electric Scooter (Nov 2023 – Feb 2024)
+
+Converted a conventional scooter into an electric model powered by solar energy; DC motor control, Li-Ion battery, PV charging station.
+
+Solar Thermal Collector for Domestic Hot Water (Apr 2023 – Jun 2023)
+
+Solar water-heating system with Arduino control, sensors, and electronics to regulate flow and optimize efficiency.
+
+Hydraulic Power Plant for an Off-Grid House (Nov 2022 – Jan 2023)
+
+Off-grid hydro system: energy sizing, pump control, real-time monitoring with PLC.
+
+Skills
+
+Technical: Python, MATLAB, Simulink, Texas Instruments, Arduino, LabVIEW, SolidWorks, Inkscape, Tableau, SQL, Data Visualization, Predictive Modeling, Machine Learning, NLP, MLOps, A/B Testing
+Interpersonal: Communication Skills, Leadership, Attentive, Hard-working, Cheerful, Teamwork, Adaptability
+Languages: English (Professional), Spanish (Native), Basque (Native)
+
+3) Copy (texto) por idioma
+
+Debes crear traducciones EN/ES para todo.
+
+Ejemplos de labels:
+
+EN: Home, About, Experience, Projects, Skills, Education, Contact
+
+ES: Inicio, Sobre mí, Experiencia, Proyectos, Habilidades, Educación, Contacto
+
+CTAs:
+
+EN: “Contact me”, “View LinkedIn”
+
+ES: “Contáctame”, “Ver LinkedIn”
+
+En “About”, escribe un párrafo corto (2–3 líneas) que conecte Energy + Business Analytics/AI + enfoque práctico.
+
+4) Componentes y estructura
+
+App con layout general.
+
+Header con navegación + LanguageToggle.
+
+Secciones: Hero, About, Experience, Projects, Skills, Education, Contact, Footer.
+
+Datos en un archivo data.ts (o data.js) y traducciones en i18n.ts.
+
+Estilo con Tailwind y algunas animaciones suaves (hover, fade-in).
+
+5) Contact
+
+Botón de email: mailto:axierzebe@gmail.com
+
+LinkedIn clicable
+
+(Opcional) formulario de contacto sin backend (solo UI) o un texto “Send me an email”.
+
+6) Entregables
+
+Genera todo el código funcionando.
+
+Incluye instrucciones breves para correrlo:
+
+instalar deps
+
+npm run dev
+
+Asegúrate de que no haya placeholders tipo “John Doe” ni contenido inventado.
+
+Si puedes, añade un botón “Download CV” pero déjalo apuntando a /cv.pdf y explica que debo subir el PDF con ese nombre.
