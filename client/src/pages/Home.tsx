@@ -411,54 +411,58 @@ function ProjectCard({
   description,
   tags,
   pdfHref,
-  downloadName,
 }: {
   icon: React.ReactNode;
   title: string;
   description: string;
   tags: string[];
   pdfHref: string;
-  downloadName: string;
 }) {
   return (
-    <a href={pdfHref} download={downloadName} className="block h-full group">
-      <Card
-        className="
-          h-full flex flex-col overflow-hidden
-          border-border/60 cursor-pointer
-          transition-all duration-300
-          hover:-translate-y-1 hover:shadow-lg hover:border-primary/40 hover:bg-primary/5
-        "
-      >
-        <CardHeader>
-          <div className="mb-4 p-3 bg-muted rounded-xl w-fit group-hover:bg-primary/10 transition-colors">
-            {icon}
-          </div>
+    <Card className="h-full flex flex-col border-border/60">
+      <CardHeader>
+        <div className="mb-4 p-3 bg-muted rounded-xl w-fit">
+          {icon}
+        </div>
 
-          <CardTitle className="text-xl flex items-center justify-between gap-2">
-            <span>{title}</span>
-            <span className="text-xs text-muted-foreground group-hover:text-primary">
-              Download PDF ⬇
-            </span>
-          </CardTitle>
-        </CardHeader>
+        <CardTitle className="text-xl">{title}</CardTitle>
+      </CardHeader>
 
-        <CardContent className="flex-1 flex flex-col">
-          <p className="text-muted-foreground mb-6 line-clamp-3">{description}</p>
-          <div className="flex flex-wrap gap-2 mt-auto pointer-events-none">
-            {tags.map((tag) => (
-              <Badge
-                key={tag}
-                variant="secondary"
-                className="bg-primary/10 text-primary py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm"
-              >
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-    </a>
+      <CardContent className="flex-1 flex flex-col">
+        <p className="text-muted-foreground mb-6 line-clamp-3">
+          {description}
+        </p>
+
+        {/* TAGS */}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {tags.map((tag) => (
+            <Badge
+              key={tag}
+              variant="secondary"
+              className="bg-primary/10 text-primary py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20 shadow-sm"
+            >
+              {tag}
+            </Badge>
+          ))}
+        </div>
+
+        {/* BOTÓN OPEN PDF */}
+        <div className="mt-auto">
+          <a
+            href={encodeURI(pdfHref)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              variant="outline"
+              className="w-full flex items-center justify-center gap-2"
+            >
+              Open PDF
+            </Button>
+          </a>
+        </div>
+      </CardContent>
+    </Card>
   );
 }
 
