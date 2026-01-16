@@ -50,13 +50,7 @@ const translations: Record<string, Record<Language, string>> = {
   EN: "Professional training in electrical distribution, contributing to the operational management of work centers, personnel, and projects. Involvement in fault management and new electrical supply projects. Development of a custom LabVIEW application to optimize operational management and resource allocation.\n\nFinal Degree Project report available in Spanish.",
   ES: "Formación profesional en distribución eléctrica, participando en la gestión operativa de centros de trabajo, personal y proyectos. Colaboración en la resolución de averías y en proyectos de nuevos suministros eléctricos. Desarrollo de una aplicación personalizada en LabVIEW para optimizar la gestión operativa y la asignación de recursos.\n\nMemoria del TFG disponible en español."
 }
-<p className="whitespace-pre-line">
-  {text.split("\n\n")[0]}
-  {"\n\n"}
-  <span className="italic">
-    {text.split("\n\n")[1]}
-  </span>
-</p>
+
 
 
   // Projects
