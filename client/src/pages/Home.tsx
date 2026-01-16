@@ -245,62 +245,62 @@ export default function Home() {
   <SectionHeader title={t("proj.title")} subtitle="Engineering & Innovation" />
 
   <div className="grid md:grid-cols-2 gap-8">
-    <ProjectCard
-      icon={<Wind className="h-8 w-8 text-blue-500" />}
-      title={t("proj.1.title")}
-      description={t("proj.1.desc")}
-      tags={[
-        t("proj.1.skill.1"),
-        t("proj.1.skill.2"),
-        t("proj.1.skill.3"),
-        t("proj.1.skill.4"),
-        t("proj.1.skill.5")
-      ]}
-      pdfHref="/wind-generator.pdf"
-    />
+  <ProjectCard
+    icon={<Wind className="h-8 w-8 text-blue-500" />}
+    title={t("proj.1.title")}
+    description={t("proj.1.desc")}
+    tags={[
+      t("proj.1.skill.1"),
+      t("proj.1.skill.2"),
+      t("proj.1.skill.3"),
+      t("proj.1.skill.4"),
+      t("proj.1.skill.5")
+    ]}
+    pdfs={[{ label: "PDF-EU", href: "/wind-generator.pdf" }]}
+  />
 
-    <ProjectCard
-      icon={<Battery className="h-8 w-8 text-green-500" />}
-      title={t("proj.2.title")}
-      description={t("proj.2.desc")}
-      tags={[
-        t("proj.2.skill.1"),
-        t("proj.2.skill.2"),
-        t("proj.2.skill.3"),
-        t("proj.2.skill.4"),
-        t("proj.2.skill.5")
-      ]}
-      pdfHref="/electric-scooter.pdf"
-    />
+  <ProjectCard
+    icon={<Battery className="h-8 w-8 text-green-500" />}
+    title={t("proj.2.title")}
+    description={t("proj.2.desc")}
+    tags={[
+      t("proj.2.skill.1"),
+      t("proj.2.skill.2"),
+      t("proj.2.skill.3"),
+      t("proj.2.skill.4"),
+      t("proj.2.skill.5")
+    ]}
+    pdfs={[{ label: "PDF-EN", href: "/electric-scooter.pdf" }]}
+  />
 
-    <ProjectCard
-      icon={<Sun className="h-8 w-8 text-yellow-500" />}
-      title={t("proj.3.title")}
-      description={t("proj.3.desc")}
-      tags={[
-        t("proj.3.skill.1"),
-        t("proj.3.skill.2"),
-        t("proj.3.skill.3"),
-        t("proj.3.skill.4"),
-        t("proj.3.skill.5")
-      ]}
-      pdfHref="/solar-project.pdf"
-    />
+  <ProjectCard
+    icon={<Sun className="h-8 w-8 text-yellow-500" />}
+    title={t("proj.3.title")}
+    description={t("proj.3.desc")}
+    tags={[
+      t("proj.3.skill.1"),
+      t("proj.3.skill.2"),
+      t("proj.3.skill.3"),
+      t("proj.3.skill.4"),
+      t("proj.3.skill.5")
+    ]}
+    pdfs={[{ label: "PDF-EU", href: "/solar-project.pdf" }]}
+  />
 
-    <ProjectCard
-      icon={<Droplets className="h-8 w-8 text-cyan-500" />}
-      title={t("proj.4.title")}
-      description={t("proj.4.desc")}
-      tags={[
-        t("proj.4.skill.1"),
-        t("proj.4.skill.2"),
-        t("proj.4.skill.3"),
-        t("proj.4.skill.4"),
-        t("proj.4.skill.5")
-      ]}
-      pdfHref="/storage-system.pdf"
-    />
-  </div>
+  <ProjectCard
+    icon={<Droplets className="h-8 w-8 text-cyan-500" />}
+    title={t("proj.4.title")}
+    description={t("proj.4.desc")}
+    tags={[
+      t("proj.4.skill.1"),
+      t("proj.4.skill.2"),
+      t("proj.4.skill.3"),
+      t("proj.4.skill.4"),
+      t("proj.4.skill.5")
+    ]}
+    pdfs={[{ label: "PDF-ES", href: "/storage-system.pdf" }]}
+  />
+</div>
 </Section>
 
 
@@ -432,49 +432,38 @@ export default function Home() {
   );
 }
 
-<ProjectCard
-  icon={<Wind className="h-8 w-8 text-blue-500" />}
-  title={t("proj.1.title")}
-  description={t("proj.1.desc")}
-  tags={[/* tus tags */]}
-  pdfs={[
-    { label: "PDF-EU", href: "/wind-generator.pdf" }
-  ]}
-/>
-<ProjectCard
-  icon={<Battery className="h-8 w-8 text-green-500" />}
-  title={t("proj.2.title")}
-  description={t("proj.2.desc")}
-  tags={[/* tus tags */]}
-  pdfs={[
-    { label: "PDF-EN", href: "/electric-scooter.pdf" }
-  ]}
-/>
-<ProjectCard
-  icon={<Droplets className="h-8 w-8 text-cyan-500" />}
-  title={t("proj.4.title")}
-  description={t("proj.4.desc")}
-  tags={[/* tus tags */]}
-  pdfs={[
-    { label: "PDF-ES", href: "/storage-system.pdf" }
-  ]}
-/>
-<ProjectCard
-  icon={<Sun className="h-8 w-8 text-yellow-500" />}
-  title={t("proj.3.title")}
-  description={t("proj.3.desc")}
-  tags={[/* tus tags */]}
-  pdfs={[
-    { label: "PDF-EU", href: "/solar-thermal.pdf" } // usa aquí el nombre real
-  ]}
-/>
-
-
-
-
+function ProjectCard({
+  icon,
+  title,
+  description,
+  tags,
+  pdfs
+}: {
+  icon: React.ReactNode
+  title: string
+  description: string
+  tags: string[]
+  pdfs?: { label: string; href: string }[]
+}) {
+  return (
+    <Card className="group hover:-translate-y-1 transition-all duration-300 hover:shadow-lg border-border/60 overflow-hidden h-full flex flex-col">
       
+      <CardHeader className="relative">
+        {pdfs && pdfs.length > 0 && (
+          <div className="absolute top-4 right-4 flex gap-2">
+            {pdfs.map(pdf => (
+              <a
+                key={pdf.label}
+                href={pdf.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-medium px-2 py-1 rounded-md border border-border bg-background/80 hover:bg-background text-foreground"
+              >
+                {pdf.label}
+              </a>
+            ))}
+          </div>
         )}
-
 
         <div className="mb-4 p-3 bg-muted rounded-xl w-fit group-hover:bg-primary/10 transition-colors">
           {icon}
@@ -486,7 +475,10 @@ export default function Home() {
       </CardHeader>
 
       <CardContent className="flex-1 flex flex-col">
-        <p className="text-muted-foreground mb-6 line-clamp-3">{description}</p>
+        {/* 👇 AQUÍ FUNCIONA EL \n */}
+        <p className="text-muted-foreground mb-6 whitespace-pre-line">
+          {description}
+        </p>
 
         <div className="flex flex-wrap gap-2 mt-auto">
           {tags.map(tag => (
@@ -503,6 +495,7 @@ export default function Home() {
     </Card>
   )
 }
+
 
 
 
