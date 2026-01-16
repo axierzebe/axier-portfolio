@@ -216,7 +216,7 @@ export default function Home() {
 
     {/* Experience Section */}
 <Section id="experience" className="py-16">
-  <SectionHeader title={t("exp.title")} subtitle="Professional Journey" />
+  <SectionHeader title={t("exp.title")} subtitle={t("exp.subtitle")} />
 
   <div className="relative border-l-2 border-primary/20 ml-4 md:ml-0 md:pl-8 space-y-12">
     <div className="relative">
