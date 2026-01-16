@@ -420,40 +420,42 @@ function ProjectCard({
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="flex-1 flex flex-col">
-        <p className="text-muted-foreground mb-6 line-clamp-3">
+      <CardContent className="flex-1 flex flex-col gap-4">
+        <p className="text-muted-foreground line-clamp-3">
           {description}
         </p>
 
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2 mt-auto">
-          {tags.map(tag => (
-            <Badge
-              key={tag}
-              variant="secondary"
-              className="bg-primary/10 text-primary py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20"
-            >
-              {tag}
-            </Badge>
-          ))}
-        </div>
+        {/* Footer */}
+        <div className="mt-auto flex items-end justify-between gap-4">
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2">
+            {tags.map(tag => (
+              <Badge
+                key={tag}
+                variant="secondary"
+                className="bg-primary/10 text-primary py-1 px-3 text-[10px] sm:text-xs font-medium border border-primary/20"
+              >
+                {tag}
+              </Badge>
+            ))}
+          </div>
 
-        {/* PDF link */}
-        {pdfHref && (
-          <div className="mt-4 flex justify-end">
+          {/* PDF link */}
+          {pdfHref && (
             <a
               href={pdfHref}
               download
-              className="text-xs text-muted-foreground hover:text-primary transition-colors underline underline-offset-4"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors whitespace-nowrap"
             >
-              Download PDF →
+              PDF ↓
             </a>
-          </div>
-        )}
+          )}
+        </div>
       </CardContent>
     </Card>
   )
 }
+
 
 function SkillCard({ title, icon, skills }: { title: string, icon: React.ReactNode, skills: string[] }) {
   return (
