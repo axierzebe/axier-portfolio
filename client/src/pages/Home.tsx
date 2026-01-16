@@ -305,7 +305,10 @@ export default function Home() {
        
       {/* Projects Section */}
 <Section id="projects" className="bg-slate-50 dark:bg-slate-900/20 rounded-3xl py-16">
-  <SectionHeader title={t("proj.title")} subtitle="Engineering & Innovation" />
+  <SectionHeader
+  title={t("proj.title")}
+  subtitle={t("proj.subtitle")}
+/>
 
   <div className="grid md:grid-cols-2 gap-8">
   <ProjectCard
