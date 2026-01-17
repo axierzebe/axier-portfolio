@@ -99,7 +99,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 className="lg:hidden flex justify-center mt-12 mb-8 relative"
               >
-                <div className="relative w-48 h-64 rounded-2xl bg-white dark:bg-gray-800 shadow-xl border border-white/20 flex items-center justify-center overflow-hidden rotate-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                <div className="relative w-48 h-64 rounded-2xl bg-white dark:bg-gray-800 shadow-xl border border-white/20 flex items-center justify-center overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                   <img 
                     src="/profile.png" 
                     alt="Axier Zeberio" 
@@ -143,8 +143,8 @@ export default function Home() {
 <Section id="about" className="bg-muted/30 rounded-3xl my-12 py-16">
   <SectionHeader title={t("about.title")} />
   <div className="grid md:grid-cols-3 gap-12 items-start">
-    <div className="md:col-span-2 text-lg leading-relaxed text-muted-foreground">
-      <p>{t("about.bio")}</p>
+    <div className="md:col-span-2 text-base md:text-lg leading-relaxed text-muted-foreground whitespace-pre-line">
+      {t("about.bio")}
 
         <div className="grid grid-cols-2 gap-6 mt-8">
           <div className="flex flex-col gap-2 p-4 bg-background rounded-xl border border-border/50 shadow-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:translate-y-[-4px] active:shadow-lg cursor-pointer">
