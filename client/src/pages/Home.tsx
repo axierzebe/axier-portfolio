@@ -662,7 +662,7 @@ function ContactForm() {
             <FormItem>
               <FormLabel>{t("contact.name")}</FormLabel>
               <FormControl>
-                <Input placeholder="John Doe" {...field} className="bg-background/50 h-12" />
+                <Input placeholder="..." {...field} className="bg-background/50 h-12" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -676,7 +676,7 @@ function ContactForm() {
             <FormItem>
               <FormLabel>{t("contact.email")}</FormLabel>
               <FormControl>
-                <Input placeholder="john@example.com" {...field} className="bg-background/50 h-12" />
+                <Input placeholder="...@email.com" {...field} className="bg-background/50 h-12" />
               </FormControl>
               <FormMessage />
             </FormItem>
