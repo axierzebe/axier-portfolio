@@ -133,7 +133,7 @@ const translations: Record<string, Record<Language, string>> = {
   // Education
   "edu.title": { EN: "Education", ES: "Formación Académica" },
   "edu.1.school": { EN: "Sacred Heart University", ES: "Sacred Heart University" },
-  "edu.1.degree": { EN: "Master’s in Business Analytics with Applied AI", ES: "Máster en Business Analytics con IA Aplicada" },
+  "edu.1.degree": { EN: "Master’s in Business Analytics & Applied AI", ES: "Máster en Business Analytics con IA Aplicada" },
   "edu.1.date": { EN: "Expected Dec 2026", ES: "Finalización prevista en dic. 2026" },
   "edu.1.note": { EN: "STEM-designated program | Eligible for OPT\n\nStudent Athlete D1. Maximum Academic and Athletics Scholarship", ES: "Programa STEM | Elegible para OPT\n\nEstudiante Atleta D1. Beca académica y deportiva máxima otorgada por la universidad" },
   "edu.2.school": { EN: "Mondragón University", ES: "Mondragón Unibertsitatea" },
