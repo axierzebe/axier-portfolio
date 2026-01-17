@@ -427,7 +427,7 @@ export default function Home() {
 
     {/* MASTER – Sacred Heart University */}
     <a
-      href="https://www.sacredheart.edu/"
+      href="https://www.sacredheart.edu/majors--programs/business-analytics--applied-ai---ms/"
       target="_blank"
       rel="noopener noreferrer"
       className="group block"
@@ -475,7 +475,7 @@ export default function Home() {
 
     {/* GRADO – Mondragon Unibertsitatea */}
     <a
-      href="https://www.mondragon.edu/es/inicio"
+      href="https://www.mondragon.edu/es/grado-ingenieria-energia"
       target="_blank"
       rel="noopener noreferrer"
       className="group block"
