@@ -31,7 +31,7 @@ const translations: Record<string, Record<Language, string>> = {
   "hero.cta.cv": { EN: "View CV", ES: "Ver CV" },
 
   // About
-  "about.title": { EN: "About Axier", ES: "Sobre Mí" },
+  "about.title": { EN: "About Me", ES: "Sobre Mí" },
   "about.edu": { EN: "Education", ES: "Formación Académica" },
   "about.edu.desc": { EN: "Master’s in Business Analytics (Applied AI) & BSc in Energy Engineering", ES: "Máster en Business Analytics (IA Aplicada) y Grado en Ingeniería de la Energía" },
   "about.exp": { EN: "Experience", ES: "Experiencia Profesional" },
